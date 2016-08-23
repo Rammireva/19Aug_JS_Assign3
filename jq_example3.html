@@ -1,0 +1,19 @@
+<html>
+<head><title>Jquery</title></head>
+<body>
+<form id="form1">
+    First Name: <input type="text" name="text1"><br />
+    Last Name: <input type="text" name="text2"><br />
+    <input type="submit" value="submit">
+</form>
+</body>
+<script src="../../jquery.min.js"></script>
+<script type="application/javascript">
+    $('input[name=text1]').change(function(){
+        $(this).after('<p>Entered Value is ' +$(this).val()+'</p>');
+    });
+    $('input[name=text2]').change(function(){
+        $(this).after('<p>Entered Value is ' +$(this).val()+'</p>');
+    })
+</script>
+</html>
